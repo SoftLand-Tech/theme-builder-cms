@@ -1,0 +1,16 @@
+/*
+ * CMS theme overrides — scoped under .theme-cms.
+ * Published to public/themes/cms/theme.css and loaded automatically when the
+ * active theme's preset_slug is "cms".
+ */
+.theme-cms {
+    --font-display: 'Saudi Riyal', 'Lora', Georgia, serif;
+}
+
+.theme-cms .tb-section h2 {
+    text-wrap: balance;
+}
+
+.theme-cms .tb-blog-card__excerpt {
+    line-height: 1.7;
+}

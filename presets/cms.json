@@ -1,0 +1,210 @@
+{
+    "name": {
+        "ar": "موقع محتوى",
+        "en": "CMS"
+    },
+    "description": {
+        "ar": "ثيم تحريري — مقال مميز، أحدث المقالات، تصفح المواضيع، واشتراك بريدي.",
+        "en": "An editorial theme — featured article, latest posts, topic browsing, and newsletter growth."
+    },
+    "settings": {
+        "colors": {
+            "primary": "#8A2BE2",
+            "secondary": "#4C1D95",
+            "accent": "#F59E0B",
+            "background": "#FFFDFA",
+            "surface": "#F7F3EC",
+            "text": "#231F1A",
+            "muted": "#7A716A"
+        },
+        "color_schemes": [
+            {
+                "key": "1",
+                "name": "Default",
+                "background": "#FFFDFA",
+                "surface": "#F7F3EC",
+                "text": "#231F1A",
+                "muted": "#7A716A",
+                "primary": "#8A2BE2",
+                "button": "#7C3AED",
+                "button_text": "#FFFFFF",
+                "accent": "#F59E0B"
+            },
+            {
+                "key": "2",
+                "name": "Dark",
+                "background": "#191614",
+                "surface": "#241F1C",
+                "text": "#F5F1EA",
+                "muted": "#A79E95",
+                "primary": "#A78BFA",
+                "button": "#7C3AED",
+                "button_text": "#FFFFFF",
+                "accent": "#FBBF24"
+            }
+        ],
+        "typography": {
+            "heading_font": "Lora",
+            "body_font": "Source Sans 3",
+            "base_size": 17
+        },
+        "radius": {
+            "card": 8,
+            "button": 6
+        },
+        "semantic": {
+            "price": null,
+            "sale": "#C0392B",
+            "instock": "#1E8E5A",
+            "lowstock": "#D08700",
+            "outofstock": null
+        },
+        "layout": {
+            "content_width": 980,
+            "section_rhythm": "medium"
+        },
+        "effects": {
+            "product_border": false,
+            "shine_animation": false
+        }
+    },
+    "header": {
+        "logo_text": "The Journal",
+        "background_color": "#FFFDFA",
+        "text_color": "#231F1A",
+        "accent_color": "#8A2BE2",
+        "sticky": true,
+        "transparent_on_hero": false,
+        "category_count": 0,
+        "menu": [
+            { "label": { "ar": "الرئيسية", "en": "Home" }, "url": "/" },
+            { "label": { "ar": "المقالات", "en": "Articles" }, "url": "/blog" },
+            { "label": { "ar": "المواضيع", "en": "Topics" }, "url": "/topics" },
+            { "label": { "ar": "عن الموقع", "en": "About" }, "url": "/pages/about" }
+        ],
+        "show_search": true,
+        "show_account": false,
+        "show_cart": false
+    },
+    "footer": {
+        "tagline": { "ar": "نكتب عن الأشياء التي تهمّنا.", "en": "We write about the things that matter to us." },
+        "copyright_text": "The Journal",
+        "show_links": true,
+        "background_color": "#191614",
+        "text_color": "#F5F1EA",
+        "muted_color": "#A79E95",
+        "columns": [
+            {
+                "heading": { "ar": "اقرأ", "en": "Read" },
+                "links": [
+                    { "label": { "ar": "أحدث المقالات", "en": "Latest articles" }, "url": "/blog" },
+                    { "label": { "ar": "المواضيع", "en": "Topics" }, "url": "/topics" }
+                ]
+            },
+            {
+                "heading": { "ar": "الموقع", "en": "Site" },
+                "links": [
+                    { "label": { "ar": "عن الموقع", "en": "About" }, "url": "/pages/about" },
+                    { "label": { "ar": "تواصل معنا", "en": "Contact" }, "url": "/contact" }
+                ]
+            }
+        ],
+        "social": [
+            { "platform": "twitter", "url": "https://twitter.com/" },
+            { "platform": "youtube", "url": "https://youtube.com/" }
+        ],
+        "payment_icons": [],
+        "show_logo": true
+    },
+    "blocks": [
+        {
+            "type": "BlogArticle",
+            "props": {
+                "sectionPaddingTop": "large",
+                "sectionPaddingBottom": "small",
+                "sectionBackground": "",
+                "sectionWidth": "contained",
+                "sectionTextAlign": "",
+                "hidden": false,
+                "title": { "ar": "اخترنا لك", "en": "Editor's pick" },
+                "postId": null,
+                "showExcerpt": true,
+                "ctaText": { "ar": "اقرأ المقال", "en": "Read article" },
+                "visibleOnDesktop": true,
+                "visibleOnMobile": true
+            }
+        },
+        {
+            "type": "BlogPostsGrid",
+            "props": {
+                "sectionPaddingTop": "medium",
+                "sectionPaddingBottom": "medium",
+                "sectionBackground": "",
+                "sectionWidth": "contained",
+                "sectionTextAlign": "",
+                "hidden": false,
+                "title": { "ar": "أحدث المقالات", "en": "Latest articles" },
+                "source": "latest",
+                "postIds": [],
+                "columns": 3,
+                "mobileColumns": 1,
+                "limit": 6,
+                "visibleOnDesktop": true,
+                "visibleOnMobile": true
+            }
+        },
+        {
+            "type": "BlogCategoriesGrid",
+            "props": {
+                "sectionPaddingTop": "medium",
+                "sectionPaddingBottom": "medium",
+                "sectionBackground": "",
+                "sectionWidth": "contained",
+                "sectionTextAlign": "",
+                "hidden": false,
+                "title": { "ar": "تصفّح المواضيع", "en": "Browse topics" },
+                "columns": 4,
+                "limit": 8,
+                "visibleOnDesktop": true,
+                "visibleOnMobile": true
+            }
+        },
+        {
+            "type": "RichText",
+            "props": {
+                "sectionPaddingTop": "medium",
+                "sectionPaddingBottom": "medium",
+                "sectionBackground": "",
+                "sectionWidth": "contained",
+                "sectionTextAlign": "",
+                "hidden": false,
+                "title": { "ar": "عن الموقع", "en": "About the journal" },
+                "content": { "ar": "ننشر مقالات معمّقة أسبوعيًا — مكتوبة بعناية، ومحرَّرة بلا حشو.", "en": "We publish one deep piece each week — carefully written, tightly edited." },
+                "visibleOnDesktop": true,
+                "visibleOnMobile": true
+            }
+        },
+        {
+            "type": "Newsletter",
+            "props": {
+                "sectionPaddingTop": "medium",
+                "sectionPaddingBottom": "medium",
+                "sectionBackground": "",
+                "sectionWidth": "contained",
+                "sectionTextAlign": "",
+                "hidden": false,
+                "title": { "ar": "مقال واحد كل أسبوع", "en": "One piece, every week" },
+                "subtitle": { "ar": "اشترك ليصلك أفضل ما ننشره دون إزعاج.", "en": "Subscribe for our best writing, zero noise." },
+                "placeholder": { "ar": "بريدك الإلكتروني", "en": "Your email" },
+                "ctaText": { "ar": "اشترك", "en": "Subscribe" },
+                "layout": "center",
+                "visibleOnDesktop": true,
+                "visibleOnMobile": true
+            }
+        }
+    ],
+    "templates": {
+        "post": { "before": [], "after": [] },
+        "page": { "before": [], "after": [] }
+    }
+}

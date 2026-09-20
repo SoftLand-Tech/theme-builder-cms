@@ -1,0 +1,22 @@
+{
+    "slug": "cms",
+    "name": { "en": "CMS", "ar": "موقع محتوى" },
+    "description": {
+        "en": "An editorial theme — featured article hero, latest posts, topic grids, and newsletter growth.",
+        "ar": "ثيم تحريري — مقال مميز، أحدث المقالات، شبكات مواضيع، ونمو للقائمة البريدية."
+    },
+    "site_types": ["cms"],
+    "pages": {
+        "post": { "label": { "en": "Article", "ar": "المقال" } },
+        "page": { "label": { "en": "Page", "ar": "الصفحة" } }
+    },
+    "routes_map": {
+        "post": "/blog",
+        "page": "/pages",
+        "blog.index": "/blog"
+    },
+    "suggested_blocks": [
+        "BlogArticle", "BlogPostsGrid", "BlogCategoriesGrid", "Hero", "RichText",
+        "ImageWithText", "CollapsibleContent", "Newsletter", "ContactForm"
+    ]
+}

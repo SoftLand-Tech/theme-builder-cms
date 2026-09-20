@@ -1,0 +1,28 @@
+{
+    "name": "softlandtech/theme-builder-cms",
+    "description": "CMS / blog / magazine theme package for softlandtech/theme-builder — editorial layouts, topic grids, and article pages.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "theme", "cms", "blog", "magazine", "editorial", "theme-builder"],
+    "require": {
+        "php": "^8.3",
+        "softlandtech/theme-builder": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SoftLand\\ThemeBuilderCms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SoftLand\\ThemeBuilderCms\\CmsThemeProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
