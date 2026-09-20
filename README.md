@@ -8,13 +8,27 @@ browser, about text, newsletter — plus the pages those sites need
 
 ## Install
 
+**By clone (no composer needed):**
+
+```bash
+git clone https://github.com/SoftLand-Tech/theme-builder-cms theme-builder-themes/theme-builder-cms
+php artisan theme-builder:seed-preset cms
+```
+
+The core package discovers everything under `theme-builder-themes/`
+(configure the directory via `theme-builder.themes_path`). Update anytime
+with `git pull` inside the clone, then re-seed.
+
+**By composer:**
+
 ```bash
 composer require softlandtech/theme-builder-cms
 php artisan theme-builder:seed-preset cms
 ```
 
-Or run `php artisan theme-builder:install` — it detects CMS/blog apps (Post /
-Page models, blog routes…) and suggests this package.
+**Or the installer** — `php artisan theme-builder:install` detects CMS/blog
+apps (Post / Page models, blog routes…), suggests this package, and clones
+it for you when you pick it.
 
 ## What's inside
 
